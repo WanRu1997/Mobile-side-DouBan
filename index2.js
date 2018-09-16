@@ -30,7 +30,7 @@ var Top250 ={
         this.isLoading = true; 
         this.$Load.show();
         $.ajax({
-            url: 'http://api.douban.com/v2/movie/top250',
+            url: 'https://api.douban.com/v2/movie/top250',
             type: 'GET',
             data: {
               start: _this.index,
@@ -100,7 +100,7 @@ var US_box = {
     start: function(){
         var _this = this;
         $.ajax({
-            url: 'http://api.douban.com/v2/movie/us_box',
+            url: 'https://api.douban.com/v2/movie/us_box',
             type: 'GET',
             dataType: 'jsonp'
            }).done(function(ret){
