@@ -40,7 +40,6 @@ var Top250 ={
            }).done(function(ret){
             _this.index+=20;
             callback&&callback(ret);
-            console.log(ret);
            }).fail(function(){
             console.log('error...');
            }).always(function(){
@@ -104,7 +103,6 @@ var US_box = {
             type: 'GET',
             dataType: 'jsonp'
            }).done(function(ret){
-            console.log(ret);
             _this.render(ret);
            }).fail(function(){
             console.log('error...');
@@ -169,7 +167,6 @@ var US_box = {
         var _this = this;
         $('.button_box input').on('click',function(){
             _this.keyword = $('.input_box input').val();
-            console.log(_this.keyword);
             $('#Serach .content').empty();
             _this.start();
         });
@@ -196,7 +193,6 @@ var US_box = {
             },
             dataType: 'jsonp'
            }).done(function(ret){
-            console.log(ret);
             _this.index+=20;
             _this.render(ret);
            }).fail(function(){
